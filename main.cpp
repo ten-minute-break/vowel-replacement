@@ -29,8 +29,6 @@ int main()
 {
     VOWEL_MEASURE(azdravkovic__vowelChange_test_swap);
 
-    // todo: there's a small glitch in this one that makes it 
-    // sometimes return the wrong value, we should wait for a fix :)
     VOWEL_MEASURE(dshamrikov__vowelChange);
 
     VOWEL_MEASURE(fgrujic__vowelChange);
