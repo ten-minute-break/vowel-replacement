@@ -24,7 +24,6 @@
 #include "mgavrilov.h"
 #include "mjovanovic.h"
 #include "mvidakovic.h"
-#include "rgligoric.h"
 
 int main()
 {
@@ -43,12 +42,11 @@ int main()
     VOWEL_MEASURE(mgavrilov__vowelChange);
     VOWEL_MEASURE(mgavrilov__vowelChange_test_hotPaths);
     VOWEL_MEASURE(mgavrilov__vowelChange_test_map);
+    VOWEL_MEASURE(mgavrilov__vowelChange_test_stdlib);
 
     VOWEL_MEASURE(mjovanovic__vowelChange_test_base);
 
     VOWEL_MEASURE(mvidakovic__vowelChange);
-
-    VOWEL_MEASURE(rgligoric__vowelChange_test_stdlib);
 
     return 0;
 }
