@@ -17,7 +17,11 @@ std::string mgavrilov__vowelChange_test_map(std::string k)
     for (int i = 0; i < k.length(); ++i)
     {
         const char& c = k[i];
-        if (c == 'a' || c == 'A' || c == 'e' || c == 'E' || c == 'i' || c == 'I' || c == 'o' || c == 'O' || c == 'u' || c == 'U')
+        if (c == 'a' || c == 'A' || 
+            c == 'e' || c == 'E' || 
+            c == 'i' || c == 'I' || 
+            c == 'o' || c == 'O' || 
+            c == 'u' || c == 'U')
         {
             k[i] = vow[c];
         }
