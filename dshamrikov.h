@@ -27,17 +27,17 @@ short* GetMapping2()
 
     char* singleMap = GetMapping();
 
-    const char vows[] = { 'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U' };
-    for (char v : vows)
+    unsigned const char vows[] = { 'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U' };
+    for (unsigned char v : vows)
     {
         for (unsigned int i = 0; i < 256; ++i)
         {
             unsigned short key = ((unsigned int)v << 8) | i;
-            short value = (singleMap[v] << 8) | i;
+            short value = (singleMap[v] << 8) | singleMap[i];
             map[key] = value;
 
             key = (i << 8) | v;
-            value = (i << 8) | singleMap[v];
+            value = (singleMap[i] << 8) | singleMap[v];
             map[key] = value;
         }
     }
@@ -60,7 +60,7 @@ std::string dshamrikov__vowelChange(std::string k)
     len = k.length();
     if (len & 1)
     {
-        k[len - 1] = vow[k[len - 1]];
+        k[len - 1] = vow[(unsigned char)k[len - 1]];
     }
 
     return k;
