@@ -1,5 +1,5 @@
 
-#include "bench.h"
+#include "benchmark.h"
 
 #define SHORT_TEST    1
 
