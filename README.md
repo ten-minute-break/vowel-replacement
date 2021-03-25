@@ -1,7 +1,7 @@
 # vowel-replacement
 Replace AEIOU with 12345 as optimally as possible!
 
-You've been given this unoptimized function to replace all instances of "AEIOU" (case-insensitive) with the digits "12345":
+You've been given this cool function to replace all instances of "AEIOU" (case-insensitive) with the digits "12345":
 
 ```cpp
 std::string mgavrilov__vowelChange_test_map(std::string k)
@@ -27,4 +27,4 @@ std::string mgavrilov__vowelChange_test_map(std::string k)
 }
 ```
 
-How fast can your version be, and what trickery will you achieve to surpass the awesome speed of the function above?
+How fast will your version be and what trickery will you use to surpass the awesome speed of the function above?
